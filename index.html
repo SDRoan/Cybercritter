@@ -20,7 +20,9 @@
   <!-- NAVIGATION -->
   <header class="navbar">
     <div class="container nav-inner">
-      <div class="logo"></div>
+      <div class="nav-brand" aria-label="CyberCritters">
+        <img src="images/Cyber%20logo.png" alt="CyberCritters logo" />
+      </div>
       <nav class="nav-links">
         <a href="#home">Home</a>
         <a href="#history">History</a>
@@ -32,9 +34,16 @@
   </header>
 
   <main id="home">
-    <!-- HERO SECTION -->
+    <!-- HERO BANNER -->
     <section class="hero">
       <div class="container hero-inner"></div>
+    </section>
+
+    <!-- CYBERCRITTERS TITLE -->
+    <section class="banner-title-section">
+      <div class="container">
+        <h1 class="banner-title">CyberCritters</h1>
+      </div>
     </section>
 
     <!-- OUR SERVICES - 2x2 Grid -->
@@ -87,18 +96,19 @@
 
   <!-- FLOATING BUTTONS -->
   <div class="floating-buttons">
-    <a href="#contact" class="floating-btn floating-btn-green">Contact Us</a>
+    <a href="mailto:CyberCrittersCEO@gmail.com" class="floating-btn floating-btn-green">Contact Us</a>
   </div>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <p>CyberCritters</p>
+    <div class="container footer-inner">
+      <p class="footer-brand">CyberCritters</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:CyberCrittersCEO@gmail.com" aria-label="Email">Email</a>
+      </div>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
