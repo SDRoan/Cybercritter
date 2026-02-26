@@ -553,6 +553,13 @@ body {
   gap: 0.5rem;
 }
 
+.footer-email-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+}
+
 .footer-brand {
   color: #1a1a1a;
   font-size: 1rem;
@@ -563,6 +570,7 @@ body {
 .social-links {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .social-links a {
