@@ -475,69 +475,6 @@ body {
 }
 
 /* FLOATING BUTTONS */
-.floating-buttons {
-  position: fixed;
-  right: 16px;
-  bottom: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  z-index: 1000;
-}
-
-.floating-btn {
-  padding: 0.75rem 1.25rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.9rem;
-  color: #ffffff;
-  text-align: center;
-  min-width: 180px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.floating-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.floating-btn:hover::before {
-  left: 100%;
-}
-
-.floating-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-.floating-btn-red {
-  background: #ef4444;
-}
-
-.floating-btn-red:hover {
-  background: #dc2626;
-}
-
-.floating-btn-green {
-  background: var(--yellow);
-  color: #000000;
-}
-
-.floating-btn-green:hover {
-  background: var(--yellow-dark);
-  color: #000000;
-}
-
 /* FOOTER */
 .footer {
   background: var(--yellow);
@@ -658,14 +595,4 @@ body {
     display: none;
   }
 
-  .floating-buttons {
-    right: 10px;
-    bottom: 10px;
-  }
-
-  .floating-btn {
-    min-width: 160px;
-    padding: 0.85rem 1.2rem;
-    font-size: 0.85rem;
-  }
 }
