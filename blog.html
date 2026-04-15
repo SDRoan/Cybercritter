@@ -11,7 +11,7 @@
   <script>
     document.documentElement.classList.add("js");
   </script>
-  <link rel="stylesheet" href="styles.css?v=20260407pixel" />
+  <link rel="stylesheet" href="styles.css?v=20260414builder" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -43,7 +43,7 @@
   </header>
 
   <main class="page-shell blog-page-shell">
-    <section class="blog-content-section" aria-label="Blog content and admin composer">
+    <section class="blog-content-section" aria-label="Blog content and admin tools">
       <div class="container blog-layout">
 
         <!-- ── LEFT: content feeds ── -->
@@ -98,53 +98,25 @@
             <div class="blog-admin-top">
               <div>
                 <p class="blog-section-label">Admin Console</p>
-                <h2 class="blog-admin-title">Composer unlocked</h2>
+                <h2 class="blog-admin-title">Publishing tools unlocked</h2>
               </div>
               <span class="blog-admin-pill">Admin access</span>
             </div>
 
-<!-- Type tabs -->
-            <div class="blog-type-tabs" role="tablist" aria-label="Post type">
-              <button type="button" class="blog-type-tab is-active" role="tab" aria-selected="true" data-post-type="article">Article</button>
-              <button type="button" class="blog-type-tab" role="tab" aria-selected="false" data-post-type="tip">Iggy Tip</button>
+            <div class="blog-admin-action-card">
+              <h3 class="blog-admin-subtitle">Article Builder</h3>
+              <p class="blog-admin-note">
+                Write articles in the dedicated editor page with richer text styling, font controls, image blocks, and layout tools.
+              </p>
+              <a href="article-editor.html" class="blog-button">Open article editor</a>
             </div>
 
-            <!-- Article form -->
-            <form class="blog-form" data-article-form>
-              <div class="blog-field">
-                <label for="article-title">Article title</label>
-                <input id="article-title" name="title" type="text" class="blog-input" maxlength="120" required />
-              </div>
-
-              <div class="blog-field">
-                <label for="article-body">Article body</label>
-                <textarea
-                  id="article-body"
-                  name="body"
-                  class="blog-input blog-textarea"
-                  placeholder="Write the full article here. Use blank lines to create new paragraphs."
-                  required
-                ></textarea>
-              </div>
-
-              <div class="blog-field">
-                <label for="article-image">Attach image (optional)</label>
-                <input
-                  id="article-image"
-                  name="image"
-                  type="file"
-                  class="blog-input blog-input-file"
-                  accept="image/*"
-                />
-              </div>
-
-              <div class="blog-form-actions">
-                <button type="submit" class="blog-button">Publish article</button>
-              </div>
-            </form>
+            <div class="blog-admin-action-card">
+              <h3 class="blog-admin-subtitle">Post an Iggy Tip</h3>
+              <p class="blog-admin-note">Quick image-based tips can still be posted directly from this page.</p>
 
             <!-- Iggy Tip form -->
-            <form class="blog-form" data-tip-form hidden>
+            <form class="blog-form" data-tip-form>
               <div class="blog-field">
                 <label for="tip-caption">Caption / title</label>
                 <input id="tip-caption" name="caption" type="text" class="blog-input" maxlength="120" required />
@@ -166,6 +138,7 @@
                 <button type="submit" class="blog-button">Post tip</button>
               </div>
             </form>
+            </div>
 
             <p class="blog-feedback" data-blog-form-feedback aria-live="polite"></p>
 
@@ -201,6 +174,6 @@
     </div>
   </footer>
 
-  <script src="site.js?v=20260402blog3"></script>
+  <script src="site.js?v=20260414builder1"></script>
 </body>
 </html>
